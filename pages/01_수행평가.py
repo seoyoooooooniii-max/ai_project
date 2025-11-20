@@ -33,4 +33,7 @@ mbti_descriptions = {
 # 결과 출력
 st.subheader(f"🔎 {selected_mbti} 유형 분석 결과")
 if selected_mbti in mbti_descriptions:
-    st.ma
+    st.markdown(mbti_descriptions[selected_mbti])
+else:
+    st.write("해당 MBTI 설명이 등록되지 않았습니다.")
+
